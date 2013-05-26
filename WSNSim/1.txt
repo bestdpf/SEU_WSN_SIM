@@ -1,0 +1,7 @@
+yahoo的api
+1 mojito js接口
+2 YQL顾名思义，查询在线数据库的
+3 YUI js web ui interface
+4 boss html search interface
+5 placefinder 地理查询
+6 flickr
