@@ -33,9 +33,9 @@ public class MapViewer extends JFrame{
     java.util.Timer timer;
     private void  startMap()
     {
-        g=new DirectedSparseMultigraph();
-        layout=new StaticLayout(g);
-        vv=new VisualizationViewer(layout, getSize());
+        g=new DirectedSparseMultigraph<>();
+        layout=new StaticLayout<>(g);
+        vv=new VisualizationViewer<>(layout, getSize());
         timer=new Timer();
         timer.schedule(new UpdateMapTask(), PublicData.refreshInter, PublicData.refreshInter);
         //vv.repaint();
@@ -90,7 +90,7 @@ public class MapViewer extends JFrame{
     @Override
     public void run() {
         //System.out.println("update map now");
-        LinkedList backlist=new LinkedList();
+        LinkedList<EdgeOp> backlist=new LinkedList<>();
         PublicData pd=PublicData.getData();
         int i;
         PosOp tmpPosOp;

@@ -23,14 +23,14 @@ public class RoutePackage  implements Serializable{
         type=-1;//error type
         src=0;
         dst=0;
-        routeList=new LinkedList();
+        routeList=new LinkedList<>();
     }
     public RoutePackage(int t,int s,int d)
     {
         type=t;
         src=s;
         dst=d;
-        routeList=new LinkedList();
+        routeList=new LinkedList<>();
     }
 
     public void setType(int i)

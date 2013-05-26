@@ -39,7 +39,7 @@ public class PublicData {
        baseUpdateRouteInter=20000;
        trickerInter=1000;
        simType=SimType.FLOURISH;
-       rt=new LinkedList();
+       rt=new LinkedList<>();
        o2aSize=20;
     };
     public static boolean DEBUG;

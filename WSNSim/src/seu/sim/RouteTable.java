@@ -14,7 +14,7 @@ public class RouteTable implements Serializable {
     public LinkedList<RouteItem>list;
     public  RouteTable()
     {
-        list=new LinkedList();
+        list=new LinkedList<>();
         RouteItem defaultRoute=new RouteItem(-1,-2);//default is not reachable
         list.add(defaultRoute);
     }

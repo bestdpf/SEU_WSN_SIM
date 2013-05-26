@@ -26,7 +26,7 @@ public class InfoPackage implements Serializable{
         type=INFOTYPE.SEND;
         firstNext=-1;
         info=null;
-        rtTab=new LinkedList();
+        rtTab=new LinkedList<>();
     }
     public InfoPackage(int d,int s,int j,INFOTYPE t,int fn,String str)
     {
@@ -36,7 +36,7 @@ public class InfoPackage implements Serializable{
         type=t;
         info=str;
         firstNext=fn;
-        rtTab=new LinkedList();
+        rtTab=new LinkedList<>();
     }
     public void setFirstNext(int fn)
     {

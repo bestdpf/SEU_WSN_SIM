@@ -29,12 +29,12 @@ public class WSNAgent extends Agent{
     public RouteTable rt;
     
     public WSNAgent() {
-        this.hset = new HashSet();
+        this.hset = new HashSet<>();
         rt=new RouteTable();
         rand=new Random();
         nextRand=new Random();
         randomNextId=-1;
-        rs=new LinkedList();
+        rs=new LinkedList<>();
         //initPara();
         //this.receiver = str;
     }
@@ -98,7 +98,7 @@ public class WSNAgent extends Agent{
         myid=(int)Integer.parseInt(getLocalName());
         this.minDisPower=pd.span*pd.span;
         minNeighbour=-1;
-        neighbour=new LinkedList();
+        neighbour=new LinkedList<>();
        // PublicData pd=PublicData.getData();
         int i;
         for(i=0;i<pd.agentCnt;i++)

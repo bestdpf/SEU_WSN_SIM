@@ -82,7 +82,7 @@ public class SecondReceiveAndActBehaviour extends WSNBaseBehaviour{
                                 {
                                     System.out.println("i am in rttab");
                                 }
-                                LinkedList<Integer> list=new LinkedList();
+                                LinkedList<Integer> list=new LinkedList<>();
                                 int i;
                                 for(i=0;i<=myloc;i++)list.add(ip.rtTab.get(i));
                                 ip.rtTab=list;
@@ -212,7 +212,7 @@ public class SecondReceiveAndActBehaviour extends WSNBaseBehaviour{
                                 {
                                     System.out.println("i am in rttab");
                                 }
-                                LinkedList<Integer> list=new LinkedList();
+                                LinkedList<Integer> list=new LinkedList<>();
                                 //int i;
                                 for(i=0;i<=myloc;i++)list.add(ip.rtTab.get(i));
                                 ip.rtTab=list;

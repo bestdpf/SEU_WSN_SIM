@@ -19,14 +19,14 @@ public class ShowRouteTable extends JFrame{
     {
         super("rt of "+agentid);
         list=PublicData.rt.get(agentid).list;
-        Vector<String> colnames =new Vector();
+        Vector<String> colnames =new Vector<>();
         colnames.add("dst");
         colnames.add("next");
-        Vector vec=new Vector();
+        Vector<Vector<Integer>> vec=new Vector<>();
         Iterator it=list.iterator();
         while(it.hasNext())
         {
-            Vector tmpVec=new Vector();
+            Vector<Integer> tmpVec=new Vector<Integer>();
             RouteItem ri=(RouteItem)it.next();
             tmpVec.add(ri.getDst());
             tmpVec.add(ri.getNext());
